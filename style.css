@@ -1,0 +1,282 @@
+/* General styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-bar {
+    background-color: #004d40;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    font-size: 0.8rem;
+}
+
+.main-nav {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #00796b;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #00796b;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(to left, #00796b, #004d40);
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: #ffb300;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #ffa000;
+}
+
+.secondary-btn {
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.secondary-btn:hover {
+    background-color: #00332c;
+}
+
+/* Services Section */
+.services {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #00796b;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.service-item {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #004d40;
+}
+
+/* Statistics Section */
+.statistics {
+    background-color: #fafafa;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.statistics h2 {
+    margin-bottom: 2rem;
+    color: #00796b;
+    font-size: 1.8rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.stat {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #004d40;
+}
+
+.stat-number {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+}
+
+/* Courses Section */
+.courses {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #00796b;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #004d40;
+}
+
+.course-price {
+    margin: 1rem 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 0.5rem;
+}
+
+.new-price {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* About and Contact Section */
+.about,
+.contact {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2,
+.contact h2 {
+    margin-bottom: 1rem;
+    color: #00796b;
+    font-size: 1.8rem;
+}
+
+.about p,
+.contact p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
