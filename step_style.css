@@ -1,0 +1,237 @@
+/* أساسيات التنسيق للموقع */
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: #f7f8fa;
+  color: #333;
+  direction: rtl;
+  text-align: right;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* رأس الصفحة */
+.main-header {
+  background: #053b63;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.main-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.main-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.main-header nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* القسم الرئيسي */
+.hero {
+  background: linear-gradient(to left, #053b63, #0c6490);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e08800;
+}
+
+/* مميزات الموقع */
+.features {
+  padding: 40px 0;
+}
+
+.features h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1 1 280px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.feature h4 {
+  margin-top: 0;
+  color: #053b63;
+}
+
+/* قسم الدورات */
+.courses-page {
+  padding: 40px 0;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.course-card {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: #053b63;
+}
+
+.course-card p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.course-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* قسم التواصل */
+.contact {
+  padding: 40px 0;
+  background: #e9f1f9;
+  text-align: center;
+}
+
+/* تذييل الصفحة */
+footer {
+  background: #053b63;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+
+/* صفحة التسجيل */
+.signup-page {
+  padding: 40px 0;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #053b63;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.signup-form button.btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* شريط إشعار ملفات تعريف الارتباط */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(5, 59, 99, 0.9);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cookie-banner .btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

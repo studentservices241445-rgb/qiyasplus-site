@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التسجيل في الدورة – أكاديمية عايد</title>
+  <link rel="stylesheet" href="step_style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1>التسجيل في الدورة</h1>
+      <nav>
+        <ul>
+          <li><a href="step_index.html">الرئيسية</a></li>
+          <li><a href="step_courses.html">الدورات</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="signup-page">
+    <div class="container">
+      <h2 id="courseTitle">التسجيل في الدورة</h2>
+      <p id="courseDesc"></p>
+      <form id="signupForm" class="signup-form">
+        <div class="form-group">
+          <label for="name">الاسم الكامل</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">رقم الهاتف</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="payment">طريقة الدفع</label>
+          <select id="payment" name="payment" required>
+            <option value="telegram">نجوم تيليجرام</option>
+            <option value="bank">تحويل بنكي</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">إرسال الطلب</button>
+      </form>
+      <p id="confirmationMessage" class="hidden"></p>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 أكاديمية عايد لاختبار STEP. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- إشعار ملفات تعريف الارتباط -->
+  <div id="cookieBanner" class="cookie-banner hidden">
+    <p>نستخدم ملفات تعريف الارتباط لتحسين تجربتك. بالاستمرار في استخدام الموقع فإنك توافق على ذلك.</p>
+    <button id="acceptCookies" class="btn">موافق</button>
+  </div>
+  <script src="step_script.js"></script>
+</body>
+</html>
